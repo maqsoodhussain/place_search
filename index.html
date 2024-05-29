@@ -5,11 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place Search</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+<center>
     <h3>Place Search Project</h3>
+     
+    <fieldset>
+        <legend>Enter Your choice</legend> <br>
+         
+         
+        Enter choice 1: <select name="nature" id="nature">
+            <option value="">SELECT</option>
+            <option value="trees" >Trees</option>
+            <option value="mountains">Mountains</option>
+            <option value="water">water</option>
+        </select> <br><br>
 
+        Enter choice 2: <select name="transport" id="transport" >
+            <option value="">SELECT</option>
+            <option value="hourse-boat">Hourse boat</option>
+            <option value="Cars">Cars</option>
+            <option value="Buses">Buses</option>
+        </select>  <br><br>
+
+        Enter choice 3:<select name="people" id="people">
+            <option value="">SELECT</option>
+            <option value="More-people" >More People </option>
+            <option value="Less-People"> Less Peoples</option>
+            <option value="no people">No peoples</option>
+        </select><br><br>
+
+
+        
+
+        
+        <!-- <input type="submit" name="submit" id="submit" onclick="getchoice()" value="Submit to Generate Place" >  -->
+        <button type="submit" id="submit">Submit to Generate Place </button>
+        <br><br>
+    </fieldset>
+
+<br><br><br>
+    <fieldset id="imgSection">
+        <legend>YOUR CHOOSE</legend>
+        <p id="myElement"></p>
+        <h3>Image Generated Accourding to your choice:</h3>
+            <img id="img" src="#" alt="image"  width="600">
+            <h4 id="name"></h4>
+       
+    </fieldset>
     
+
+</center>
+
+
 <script src="script.js"></script> 
 </body>
+
 </html>
