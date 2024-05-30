@@ -12,11 +12,8 @@ btn.addEventListener("click",()=>{
     let option1 = document.getElementById("nature").value;
     var option2= document.getElementById("transport").value;
     var option3= document.getElementById("people").value;
-   
-
-    
-        document.getElementById("imgSection").style.visibility="visible";
-        myElement.innerHTML="your choice: "+option1+" " +option2+" "+option3; 
+    document.getElementById("imgSection").style.visibility="visible";
+    myElement.innerHTML="your choice: "+option1+" " +option2+" "+option3; 
 
         if(option1=='water' && option2=='hourse-boat' && option3=='Less-People'){
             img.src="images/DAL.webp";
@@ -33,6 +30,7 @@ btn.addEventListener("click",()=>{
         }
         else{
             document.getElementById("imgSection").style.visibility="hidden";
+            alert("NO PLACE FOUND BY US! ")
             
 
         }
